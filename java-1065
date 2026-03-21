@@ -1,0 +1,25 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner input = new Scanner(System.in);
+        int v1 = input.nextInt();
+        int v2 = input.nextInt();
+        int v3 = input.nextInt();
+        int v4 = input.nextInt();
+        int v5 = input.nextInt();
+        
+        int pares = 0;
+        
+        if (v1 % 2  == 0) pares++;
+        if (v2 % 2  == 0) pares++;
+        if (v3 % 2  == 0) pares++;
+        if (v4 % 2  == 0) pares++;
+        if (v5 % 2  == 0) pares++;
+        
+        System.out.println(pares + " valores pares");
+    }
+ 
+}
