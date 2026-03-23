@@ -1,0 +1,24 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner input = new Scanner(System.in);
+        
+        double pi = 3.14159;
+        
+        double valueA = input.nextDouble();
+        double valueB = input.nextDouble();
+        double valueC = input.nextDouble();
+        
+        double triangle = (valueA * valueC) / 2;
+        double circle = pi * Math.pow(valueC, 2);
+        double trapezium = ((valueA + valueB) * valueC) / 2;
+        double square = Math.pow(valueB, 2);
+        double rectangle = valueA * valueB;
+        
+        System.out.printf("TRIANGULO: %.3f\nCIRCULO: %.3f\nTRAPEZIO: %.3f\nQUADRADO: %.3f\nRETANGULO: %.3f\n", triangle, circle, trapezium, square, rectangle);
+        }
+ 
+}
