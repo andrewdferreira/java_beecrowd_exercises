@@ -1,0 +1,16 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner input = new Scanner(System.in);
+        
+        //the car y is 90 kilometers per hour and the car x is 60 kilometers per hour
+        int carYToCarXInKM = input.nextInt();
+        int carYToCarXInMin = (carYToCarXInKM * 2);
+        
+        System.out.printf("%d minutos\n", carYToCarXInMin);
+    }
+ 
+}
