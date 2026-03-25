@@ -1,0 +1,19 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner input = new Scanner(System.in);
+        
+        int valueA = input.nextInt();
+        int valueB = input.nextInt();
+        int valueC = input.nextInt();
+        
+        int maiorAB = (valueA + valueB + Math.abs(valueA - valueB)) / 2;
+        
+        int maior = (maiorAB + valueC + Math.abs(maiorAB - valueC)) / 2;
+        
+        System.out.println(maior + " eh o maior");
+    }
+}
