@@ -1,0 +1,20 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner input = new Scanner(System.in);
+        
+        int kilometerPerLiter = 12; //km/L
+        int time = input.nextInt(); //hours
+        int averageSpeed = input.nextInt();
+        
+        double distance = (time * averageSpeed);
+        
+        double fuel = (distance / kilometerPerLiter);
+        
+        System.out.printf("%.3f\n", fuel);
+    }
+ 
+}
