@@ -1,0 +1,23 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner input = new Scanner(System.in);
+        
+        int counter = 1;
+        int value = input.nextInt();
+        
+        if (value % 2 == 0){
+            value++;
+        }
+        
+        do{
+            System.out.println(value);
+            value += 2;
+            counter++;
+        }
+        while (counter <= 6);
+        }
+    }
